@@ -10,7 +10,7 @@
     },
     "bot_user": {
       "display_name": "Bolt for JavaScript Assistant",
-      "always_online": false
+      "always_online": true
     },
     "assistant_view": {
       "assistant_description": "An Assistant built with Bolt for JavaScript, at your service!",
@@ -20,12 +20,14 @@
   "oauth_config": {
     "scopes": {
       "bot": [
-        "assistant:write",
-        "channels:join",
-        "im:history",
+        "app_mentions:read",
         "channels:history",
-        "groups:history",
-        "chat:write"
+        "channels:join",
+        "chat:write",
+        "im:history",
+        "im:write",
+        "messages:read",
+        "assistant:write"
       ]
     }
   },
@@ -34,7 +36,10 @@
       "bot_events": [
         "assistant_thread_context_changed",
         "assistant_thread_started",
-        "message.im"
+        "message.im",
+        "message.channels",
+        "message.groups",
+        "app_mentions"
       ]
     },
     "interactivity": {

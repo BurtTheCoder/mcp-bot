@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A template for building Slack app Assistants",
   "main": "dist/app.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/app.js",
@@ -29,7 +30,8 @@
     "@modelcontextprotocol/sdk": "^1.0.3",
     "@slack/bolt": "^4.1.1",
     "dotenv": "~16.4.5",
-    "openai": "^4.74.0"
+    "openai": "^4.74.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
