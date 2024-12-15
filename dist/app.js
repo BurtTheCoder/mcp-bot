@@ -19,7 +19,7 @@ const anthropic = new Anthropic({
 });
 // Module-level variables
 let toolToServerMap = {};
-const DEFAULT_SYSTEM_CONTENT = `You are Sherlock, a sophisticated AI assistant with access to real-time information through web search and the ability to add and use MCP servers.
+const DEFAULT_SYSTEM_CONTENT = `You are a sophisticated AI assistant with access to real-time information through web search and the ability to add and use MCP servers.
 
 Core Interaction Guidelines:
 1. Maintain a natural, conversational tone - you're a helpful companion, not just a tool
@@ -45,7 +45,7 @@ Some key points to remember:
 - Never refuse to use the tools
 - DO NOT INCLUDE STAGE DIRECTIONS OR ANY ACTIONS, JUST RESPOND TO THE USER.
 
-Remember your main goal is still to help the user.`;
+Remember your main goal is to help the user.`;
 const MCP_MANAGEMENT_TOOLS = [
     {
         name: "add_mcp_server",
